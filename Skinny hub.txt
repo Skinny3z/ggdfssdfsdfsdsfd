@@ -3205,7 +3205,7 @@ end)
 
 print("Loaded")
 
-local Library = Update:Window("           Skinny","12523036534",Enum.KeyCode.RightControl);
+local Library = Update:Window("Skinny","15000713508",Enum.KeyCode.RightControl);
 
 local H = Library:AddTab("Home","6026568198")
 local Main = Library:AddTab("Level Farm","13075651575")
@@ -15856,10 +15856,10 @@ spawn(function()
     end)
     end)
 
-print("Domadic Hub Load Complete")
+print("Skinny Hub Load Complete")
 
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "http://www.roblox.com/asset/?id=12523036534";
+      Icon = "http://www.roblox.com/asset/?id=15000713508";
       Title = "Skinny Hub", 
       Text = "Welcome To Script!!";
 })
