@@ -165,7 +165,7 @@ function Update:Window(text,logo,keybind)
     MapName.Position = UDim2.new(0, 85, 0, 0)
     MapName.Size = UDim2.new(0, 81, 0, 27)
     MapName.Font = Enum.Font.GothamSemibold
-    MapName.Text = "| Blox Fruits V2"
+    MapName.Text = " | Blox Fruits V2"
     MapName.TextColor3 = Color3.fromRGB(225, 225, 225)   
     MapName.TextSize = 20.000
     MapName.TextXAlignment = Enum.TextXAlignment.Left
@@ -198,7 +198,7 @@ local LogoHub = Instance.new("ImageLabel")
     LogoHub.BackgroundTransparency = 1.000
     LogoHub.Position = UDim2.new(0, 5, 0, 1)
     LogoHub.Size = UDim2.new(0, 26, 0, 26)
-    LogoHub.Image = "http://www.roblox.com/asset/?id="..tostring(15000713508 )
+    LogoHub.Image = "http://www.roblox.com/asset/?id="..tostring(15000713508)
 
     local ScrollTab = Instance.new("ScrollingFrame")
     ScrollTab.Name = "ScrollTab"
