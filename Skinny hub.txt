@@ -7143,7 +7143,7 @@ end
     _G.StardHop = value
     end)
 
-    M:AddSeperator("🪽Raid Avançada🪽")
+    M:AddSeperator("✅Raid Avançada✅")
     
     M:AddToggle("🦅Auto Phoenix Raid🦅",_G.AutoAdvanceDungeon,function(value)
         _G.AutoAdvanceDungeon = value
@@ -7605,7 +7605,7 @@ end
         end)
     end)
     
-    M:AddToggle("Auto Farm Gun Mastery",_G.AutoFarmGunMastery,function(value)
+    M:AddToggle("🛡️Auto Farm Arma Mastery🛡️",_G.AutoFarmGunMastery,function(value)
         _G.AutoFarmGunMastery = value
         StopTween(_G.AutoFarmGunMastery)
     end)
@@ -7702,7 +7702,7 @@ function EquipWeaponSword()
 	end)
 end
 
-    M:AddToggle("Auto Farm Sword Mastery",_G.AutoSwordMastery,function(value)
+    M:AddToggle("⚔️Auto Farm Espada Maestria⚔️",_G.AutoSwordMastery,function(value)
         _G.AutoSwordMastery = value
         StopTween(_G.AutoSwordMastery)
     end)
@@ -7788,7 +7788,7 @@ end
     
 
     
-    M:AddSeperator("Misc Buddy Sword")
+    M:AddSeperator("🗡️Misc Buddy Sword🗡️")
     
     M:AddToggle("Auto Buddy Sword",_G.AutoBudySword,function(value)
         _G.AutoBudySword = value
@@ -7847,7 +7847,7 @@ end
         end
     end)
     
-    M:AddSeperator("Soul Guitar")
+    M:AddSeperator("🗡️Soul Guitar🗡️")
     
     local FM = M:AddLabel('Third World')
     
@@ -7857,21 +7857,21 @@ end
                     if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
                         FM:Set("🌕: Full Moon 100%")
                     elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149052" then
-                        FM:Set("🌖’ : Full Moon 75%")
+                        FM:Set("🌖: Full Moon 75%")
                     elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
-                        FM:Set("🌗“ : Full Moon 50%")
+                        FM:Set("🌗: Full Moon 50%")
                     elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709150401" then
-                        FM:Set("🌘 : Full Moon 25%")
+                        FM:Set("🌘: Full Moon 25%")
                     elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
                         FM:Set("🌘: Full Moon 15%")
                     else
-                        FM:Set("Wait For Moon")
+                        FM:Set("🌑:Wait For Moon")
                     end
                 end)
             end
     end)
     
-    M:AddToggle("Auto Soul Guitar",_G.AutoNevaSoulGuitar,function(value)
+    M:AddToggle("🌕Auto Soul Guitar🌕",_G.AutoNevaSoulGuitar,function(value)
   _G.AutoNevaSoulGuitar = value    
  StopTween(_G.AutoNevaSoulGuitar)
  end)
@@ -8000,7 +8000,7 @@ M:AddToggle("Auto Soul Guitar + Hop",false,function(value)
   _G.soulGuitarhop = value    
  end)
 
-M:AddToggle("Auto Find Full Moon",_G.AutoFindFullmoon,function(value)
+M:AddToggle("🌕Auto Find Full Moon🌕",_G.AutoFindFullmoon,function(value)
   _G.AutoFindFullmoon = value    
  end)
  
@@ -8046,9 +8046,9 @@ M:AddToggle("Auto Find Full Moon",_G.AutoFindFullmoon,function(value)
         end
     end)
     
- M:AddSeperator("Dual Curse Katana")
+ M:AddSeperator("⚔️Auto CDK⚔️")
 
-M:AddToggle("Auto Dual Curse Katana",_G.AutoCdk,function(value)
+M:AddToggle("⚔️Auto CDK⚔️",_G.AutoCdk,function(value)
  Auto_Cursed_Dual_Katana = value
 StopTween(Auto_Cursed_Dual_Katana)
 end)
@@ -8486,7 +8486,7 @@ spawn(function()
         end
     end)
 	
-	M:AddSeperator(" Tushita ")
+	M:AddSeperator("⚔️Tushita⚔️")
 
 M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
          _G.Autotushita = value
@@ -8545,7 +8545,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
         end
     end)
 
-    M:AddSeperator("Carvander")
+    M:AddSeperator("⚔️Canvander⚔️")
 
     M:AddToggle("Auto Cavander", _G.AutoCarvender,function(value)
          _G.AutoCarvender = value
@@ -8604,7 +8604,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
         end
     end)
     
-    M:AddSeperator("Pirate Raid [BETA]")
+    M:AddSeperator("🏴‍☠️Pirate Raid [BETA]🏴‍☠️")
     
     M:AddToggle("Auto Pirate Raid", _G.AutoCarvender,function(value)
      _G.RaidPirate = value
@@ -8646,7 +8646,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
     end
     end)
     
-    M:AddSeperator("Twin Hook")
+    M:AddSeperator("🪝Ganchos Gemêos🪝")
     
     M:AddToggle("Auto Twin Hook", _G.AutoTwinHook,function(value)
          _G.AutoTwinHook = value
