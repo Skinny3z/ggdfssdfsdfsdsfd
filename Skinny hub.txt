@@ -8648,7 +8648,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
     
     M:AddSeperator("✅Ganchos Gemêos✅")
     
-    M:AddToggle("Auto Twin Hook", _G.AutoTwinHook,function(value)
+    M:AddToggle("Auto Ganchos Gemêos", _G.AutoTwinHook,function(value)
          _G.AutoTwinHook = value
         StopTween( _G.AutoTwinHook)
     end)
@@ -9129,7 +9129,7 @@ M:AddButton("🚢Set Speed Boat🚢",function()
     
 FrozenIsland = M:AddLabel("")
      
-    M:AddToggle("Auto Frozen Dimension",_G.AutoFrozenDimension,function(value)
+    M:AddToggle("✅Auto Leviathan Island✅",_G.AutoFrozenDimension,function(value)
     _G.AutoFrozenDimension = value
     StopTween(_G.AutoFrozenDimension)
     end)
@@ -9173,8 +9173,8 @@ FrozenIsland = M:AddLabel("")
 --Notfication-Sound  
 local notification = Instance.new("Sound")
 notification.Parent = game:GetService("SoundService")
-notification.SoundId = "rbxassetid://15000713481" --sound id
-notification.Volume = 5 --ระวังหูแตก
+notification.SoundId = "rbxassetid://9086208751" --sound id
+notification.Volume = 10 
 
     spawn(function()
         while wait() do
@@ -9194,7 +9194,7 @@ notification.Volume = 5 --ระวังหูแตก
         end
     end)
         
-    M:AddSeperator("Misc Elite")
+    M:AddSeperator("🥷🏻Auto Elite Hunter🥷🏻")
     
     local EliteProgress = M:AddLabel("")
     
@@ -9221,7 +9221,7 @@ notification.Volume = 5 --ระวังหูแตก
 		end
 	end)
 	
-    M:AddToggle("Auto Elite Hunter",_G.AutoElitehunter,function(value)
+    M:AddToggle("🥷🏻Auto Elite Hunter🥷🏻",_G.AutoElitehunter,function(value)
         _G.AutoElitehunter = value
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
         StopTween(_G.AutoElitehunter)
@@ -9289,13 +9289,13 @@ notification.Volume = 5 --ระวังหูแตก
         end
     end)
     
-    M:AddToggle("Auto Elite Hunter Hop",_G.AutoEliteHunterHop,function(value)
+    M:AddToggle("🥷🏻Auto Elite Hunter Hop🥷🏻",_G.AutoEliteHunterHop,function(value)
         _G.AutoEliteHunterHop = value
     end)
     
-    M:AddSeperator("ArenaTrainer")
+    M:AddSeperator("🏟️Arena de Treino🏟️")
     
-    M:AddToggle("Auto ArenaTrainer",_G.AutoArenaTrainer,function(value)
+    M:AddToggle("🏟️Auto Arena Treino🏟️",_G.AutoArenaTrainer,function(value)
     _G.Namfon = value
     StopTween(_G.Namfon)
     end)
@@ -9358,7 +9358,7 @@ notification.Volume = 5 --ระวังหูแตก
 		end
 	end)
 	
-	M:AddToggle("Auto ArenaTrainer HOP",_G.AutoArenaTrainerHop,function(value)
+	M:AddToggle("🏟️Auto Arena Treino HOP🏟️",_G.AutoArenaTrainerHop,function(value)
         _G.AutoArenaTrainerHop = value
     end)
     
