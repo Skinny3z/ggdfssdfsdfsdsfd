@@ -3558,10 +3558,10 @@ spawn(function()
     end
 end)
 
-Main:AddSeperator("Farm")
+Main:AddSeperator("Auto Farm")
 
 
-Main:AddToggle("Auto SetSpawn Point [open it If you use Bypass Tp]",true,function(value)
+Main:AddToggle("Auto Set Spawn Point",true,function(value)
     _G.Set = value
 end)
 
@@ -3650,7 +3650,6 @@ spawn(function()
   end
   end)
   
-Main:AddLabel("Trun On Auto Farm Level If You Want To Farm Candy🤩")
 
     Main:AddToggle("Auto Farm Level",_G.AutoFarm,function(value)
         _G.AutoFarm = value
@@ -3871,7 +3870,7 @@ end
 
 
     
-Main:AddToggle("Auto Kaitan",false,function(value)
+Main:AddToggle("Farm All",false,function(value)
        _G.AutoFarm = value
        _G.SelectWeapon = "Combat"
        _G.Auto_Stats_Kaitun = value
@@ -4667,15 +4666,15 @@ Main:AddToggle("Auto Farm Chest Hop",_G.AutoFarmChest_Hop,function(value)
     end)
 
 
-    Main:AddSeperator("Dought Boss")
+    Main:AddSeperator("Katakuri Boss")
     
-local ListC = {"NoQuest", "AcceptQuest", "MasteryFruit"}
+local ListC = {"No Quest", "Accept Quest", "Mastery Fruit"}
 CakeFMode = "Accept Quest"
 Main:AddDropdown("Select Cake Farm Mode", ListC,function(value)
     CakeFMode = value
 end)
 
-        local MobKilled = Main:AddLabel("Killed")
+        local MobKilled = Main:AddLabel("Killed☠️")
     
     spawn(function()
         while wait() do
@@ -4687,7 +4686,7 @@ end)
                 elseif string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 86 then
                     MobKilled:Set("Defeat : "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,39))
                 else
-                    MobKilled:Set("Boss Is Spawning")
+                    MobKilled:Set("Boss Is Spawning!✅")
                 end
             end)
         end
