@@ -3238,24 +3238,27 @@ local H = Library:AddTab("Home","6026568198")
 local Main = Library:AddTab("Level Farm","13075651575")
 local M = Library:AddTab("Item Quest","13075622619")
 local Ss = Library:AddTab("Stats","7040410130")
-local RaceV4 = Library:AddTab("Race V4","11162889532")
-local P = Library:AddTab("Players","7251993295")
-local R = Library:AddTab("Raids","11155986081")
+local RaceV4 = Library:AddTab("Raça V4","11162889532")
+local P = Library:AddTab("Player","7251993295")
+local R = Library:AddTab("Raid","11155986081")
 local T = Library:AddTab("Teleport","11155851001")
 local S = Library:AddTab("Shop","6031265976")
 local D = Library:AddTab("Frutas","7044233235")
-local Misc = Library:AddTab("Misc","11156061121")
+local Misc = Library:AddTab("Others","11156061121")
 
 local Time = H:AddLabel("Executor Time");spawn(function() getgenv().Time = true;while true do wait(.1) UpdateTime() end end);function UpdateTime() local date = os.date("*t");local hour = (date.hour) % 24;local ampm = hour < 12 and "AM" or "PM";local timezone = string.format("%02i:%02i:%02i %s", ((hour -1) % 12) + 1, date.min, date.sec, ampm);local datetime = string.format("%02d/%02d/%04d", date.day, date.month, date.year);local LocalizationService = game:GetService("LocalizationService");local Players = game:GetService("Players");local player = Players.LocalPlayer;local name = player.Name;local result, code = pcall(function()   return LocalizationService:GetCountryRegionForPlayerAsync(player)  end);Time:Set(" : " .. timezone);Time:Set("Executor Time: " .. datetime .. " [ " .. code .. " ]");spawn(function() if getgenv().Time then pcall(function()  while wait() do  Time()  end end) end end) end
 
-H:AddLabel("Script PC/Mobile")
-H:AddLabel("Seja Bem Vindo")
+H:AddLabel("💻Seja Bem Vindo!💻")
+H:AddLabel("💻Script PC e Mobile📱)
 
 H:AddSeperator("Credits")
 
-H:AddButton("Skinny and Lose,function()
+
+
+H:AddButton("👩🏼‍💻Made By Skinny and Lose👩🏼‍💻",function()
 setclipboard("...")
 end)
+
 
 H:AddLine()
 
@@ -3264,7 +3267,7 @@ H:AddSeperator("UpdLog")
 
 
 
-H:AddLabel("[+] New Functions|4/1/2024")
+H:AddLabel("[✅] New Functions|26/12/2023")
 
 
 
@@ -3281,7 +3284,7 @@ H:AddSeperator("Status")
         end
     end)
     
-    local localrace = H:AddLabel("Race")
+    local localrace = H:AddLabel("🍃Raça")
     
     spawn(function()
         while wait() do
@@ -3291,7 +3294,7 @@ H:AddSeperator("Status")
         end
     end)
     
-    local localbeli = H:AddLabel("Beli")
+    local localbeli = H:AddLabel("💸Money")
     
     spawn(function()
         while wait() do
@@ -3301,7 +3304,7 @@ H:AddSeperator("Status")
         end
     end)
     
-    local localfrag = H:AddLabel("Fragment")
+    local localfrag = H:AddLabel("🪨Fragmentos🪨")
     
     spawn(function()
         while wait() do
@@ -3312,7 +3315,7 @@ H:AddSeperator("Status")
     end)
     
     
-    local localexp = H:AddLabel("ExP")
+    local localexp = H:AddLabel("🆙XP")
     
     spawn(function()
         while wait() do
@@ -3322,7 +3325,7 @@ H:AddSeperator("Status")
         end
     end)
     
-    local localstat = H:AddLabel("Stats Points")
+    local localstat = H:AddLabel("📈Status")
     
     spawn(function()
         while wait() do
@@ -3332,7 +3335,7 @@ H:AddSeperator("Status")
         end
     end)
     
-    local localbountyhornor = H:AddLabel("Bounty")
+    local localbountyhornor = H:AddLabel("🗡️Bounty")
     
     spawn(function()
         while wait() do
@@ -3342,7 +3345,7 @@ H:AddSeperator("Status")
         end
     end)
     
-    local localDevil = H:AddLabel("Devil Fruit")
+    local localDevil = H:AddLabel("🍎Fruta")
     
     spawn(function()
         while wait() do
@@ -3356,7 +3359,7 @@ H:AddSeperator("Status")
         end
     end)
 
-H:AddSeperator("Espadas")
+H:AddSeperator("⚔️Sword⚔️")
 
 local Saber = H:AddLabel("❌: Saber")
 local Rengoku = H:AddLabel("❌: Rengoku")
@@ -3416,7 +3419,7 @@ spawn(function()
     end
 end)
 
-H:AddSeperator("Quest")
+H:AddSeperator("🧙Quest🧙")
 
 local Bartilo_Quest = H:AddLabel("❌: Bartilo Quest")
 local Don_Swan_Quest = H:AddLabel("❌: Don Swan Quest")
@@ -3440,7 +3443,7 @@ spawn(function()
     end
 end)
 
-H:AddSeperator("Espadas Lendarias")
+H:AddSeperator("⚔️Espadas Lensarias⚔️")
 
 local Shisui = H:AddLabel("❌: Shisui")
 local Saddi = H:AddLabel("❌: Saddi")
@@ -3468,7 +3471,7 @@ spawn(function()
     end
 end)
 
-H:AddSeperator("Socos")
+H:AddSeperator("👊Soco👊")
 
 local Superhuman = H:AddLabel("❌: Superhuman")
 local Death_Step = H:AddLabel("❌: Death Step")
@@ -3497,7 +3500,7 @@ spawn(function()
     end
 end)
 
-H:AddSeperator("Armas")
+H:AddSeperator("🔫Armas🔫")
 
 local Kabu_cha = H:AddLabel("❌: Kabucha")
 local Acidum_Rifle = H:AddLabel("❌: Acidum Rifle")
@@ -3523,7 +3526,7 @@ end)
 
 
 
-H:AddSeperator("Acessórios")
+H:AddSeperator("🤠Acessorios🤠")
 
 local Dark_Coat = H:AddLabel("❌: Dark Coat")
 local Ghoul_Mask = H:AddLabel("❌: Ghoul Mask")
@@ -3559,7 +3562,7 @@ end)
 Main:AddSeperator("Farm")
 
 
-Main:AddToggle("Auto SetSpawn Point",true,function(value)
+Main:AddToggle("Auto SetSpawn Point [open it If you use Bypass Tp]",true,function(value)
     _G.Set = value
 end)
 
@@ -3576,7 +3579,7 @@ spawn(function()
   end
 end)
 
-local WeaponList = {"Soco","Espada","Fruta","Arma"}
+local WeaponList = {"Melee","Sword","Fruit","Gun"}
 _G.SelectWeapon = "Melee"
 Main:AddDropdown("Select Weapon",WeaponList,function(value)
 _G.SelectWeapon = value
@@ -3622,7 +3625,7 @@ task.spawn(function()
 	end
     end)
     
-local ListF = {"Normal", "Sem Quest"}
+local ListF = {"Normal", "Not Tween To Npc Quest"}
 FarmMode = "Normal"
 Main:AddDropdown("Farm Mode", ListF,function(value)
     FarmMode = value
@@ -3648,6 +3651,7 @@ spawn(function()
   end
   end)
   
+Main:AddLabel("Trun On Auto Farm Level If You Want To Farm Candy🤩")
 
     Main:AddToggle("Auto Farm Level",_G.AutoFarm,function(value)
         _G.AutoFarm = value
@@ -3868,7 +3872,7 @@ end
 
 
     
-Main:AddToggle("Farm All",false,function(value)
+Main:AddToggle("Auto Kaitan",false,function(value)
        _G.AutoFarm = value
        _G.SelectWeapon = "Combat"
        _G.Auto_Stats_Kaitun = value
@@ -4664,7 +4668,7 @@ Main:AddToggle("Auto Farm Chest Hop",_G.AutoFarmChest_Hop,function(value)
     end)
 
 
-    Main:AddSeperator("Dough Boss")
+    Main:AddSeperator("Dought Boss")
     
 local ListC = {"NoQuest", "AcceptQuest", "MasteryFruit"}
 CakeFMode = "Accept Quest"
@@ -4684,7 +4688,7 @@ end)
                 elseif string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 86 then
                     MobKilled:Set("Defeat : "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,39))
                 else
-                    MobKilled:Set("Boss Is Spawn ✅")
+                    MobKilled:Set("Boss Is Spawning")
                 end
             end)
         end
@@ -4993,12 +4997,12 @@ spawn(function()
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner",value)
     end)
     
-    Main:AddToggle("Auto Katakuri v2", _G.Autodoughking,function(value)
+    Main:AddToggle("Auto Dough Boss v2", _G.Autodoughking,function(value)
          _G.Autodoughking = value
         StopTween( _G.Autodoughking)
     end)
     
-    Main:AddToggle("Auto Katakuri v2 Hop", _G.AutodoughkingHop,function(value)
+    Main:AddToggle("Auto Dough Boss v2 Hop", _G.AutodoughkingHop,function(value)
          _G.AutodoughkingHop = value
     end)
     
@@ -5202,7 +5206,7 @@ end)
     Main:AddSeperator("Setting")
     
     
-Main:AddToggle("Bypass Tp",BypassTP,function(Fast)
+Main:AddToggle("By Pass Tp",BypassTP,function(Fast)
 BypassTP = Fast
 end)
 
@@ -5582,7 +5586,7 @@ end)
     end)
     
 
-    Main:AddSeperator("Configurações Maestria")
+    Main:AddSeperator("Misc Setting Mastery")
     
     _G.Kill_At = 25
 
@@ -5612,7 +5616,7 @@ end)
     M:AddSeperator("World")
 
     if World1 then
-        M:AddToggle("Auto Sea 2",_G.AutoSecondSea,function(value)
+        M:AddToggle("Auto Second Sea",_G.AutoSecondSea,function(value)
             _G.AutoSecondSea = value
             StopTween(_G.AutoSecondSea)
         end)
@@ -5758,14 +5762,14 @@ end)
         pcall(function()
             while wait() do
     if game.Workspace._WorldOrigin.Locations:FindFirstChild('Mirage Island') then
-    Mirragecheck:Set('🏝️: Mirage Island Está Spawn ✅')
+    Mirragecheck:Set('🏝️: Mirage Island is Spawning')
     else
-      Mirragecheck:Set('🏝️: Mirage Island Não Spawn ❌' )end
+      Mirragecheck:Set('❌: Mirage Island Not Found ' )end
             end
         end)
 end)
 Mirragecheck = M:AddLabel("")
-M:AddToggle("Auto Mirage Island",_G.AutoMysticIsland,function(value)
+M:AddToggle("Auto Mystic Island",_G.AutoMysticIsland,function(value)
         _G.AutoMysticIsland = value
         StopTween(_G.AutoMysticIsland)
         end)
@@ -5781,7 +5785,7 @@ M:AddToggle("Auto Mirage Island",_G.AutoMysticIsland,function(value)
                 end
             end)
         end)
-    M:AddToggle("Auto Drive Boat",AutoW,function(W)
+    M:AddToggle("Auto Drive",AutoW,function(W)
     AutoW = W
     end)
     spawn(function()
@@ -5861,7 +5865,7 @@ for _,v in next, workspace.Boats.PirateBrigade:GetDescendants() do
 end
 end
 end) 
-M:AddToggle("Teleport Vendedor de Fruta (Mirage)",_G.TPNPC,function(value)
+M:AddToggle("Teleport Advanced Fruit Dealer",_G.TPNPC,function(value)
              _G.Miragenpc = value
              StopTween(_G.Miragenpc)
         end)
@@ -5877,7 +5881,7 @@ spawn(function()
         end
     end)
 end)
-M:AddButton("Ative a Função Acime e Clicque Aqui", function()
+M:AddButton("Teleport Advanced Fruit Dealer", function()
                 TweenNpc()
                 end)
 
@@ -5923,9 +5927,9 @@ end
     
     M:AddLine()
 
-    M:AddSeperator("👊Estilos de Luta👊")
+    M:AddSeperator("Fighting Style")
     
-    M:AddToggle("❄️Auto Super Human❄️",_G.AutoSuperhuman,function(value)
+    M:AddToggle("Auto Superhuman",_G.AutoSuperhuman,function(value)
         _G.AutoSuperhuman = value
     end)
     
@@ -6002,7 +6006,7 @@ end
         end)
     end)
     
-    M:AddToggle("🔥Auto Death Step🔥",_G.AutoDeathStep,function(value)
+    M:AddToggle("Auto DeathStep",_G.AutoDeathStep,function(value)
         _G.AutoDeathStep = value
     end)
     
@@ -6028,7 +6032,7 @@ end
         end
     end)
     
-    M:AddToggle("🦈Auto Sharkman Karate🦈",_G.AutoSharkman,function(value)
+    M:AddToggle("Auto Sharkman Karate",_G.AutoSharkman,function(value)
         _G.AutoSharkman = value
     end)
     
@@ -6076,7 +6080,7 @@ end
         end)
     end)
     
-    M:AddToggle("⚡Auto Electric Claw⚡",_G.AutoElectricClaw,function(value)
+    M:AddToggle("Auto Electric Claw",_G.AutoElectricClaw,function(value)
         _G.AutoElectricClaw = value
         StopTween(_G.AutoElectricClaw)
     end)
@@ -6147,7 +6151,7 @@ end
         end)
     end)
     
-    M:AddToggle("🐲Auto Dragon Talon🐲",_G.AutoDragonTalon,function(value)
+    M:AddToggle("Auto Dragon Talon",_G.AutoDragonTalon,function(value)
         _G.AutoDragonTalon = value
     end)
     
@@ -6258,10 +6262,10 @@ spawn(function()
 	end
 end)
 
-M:AddSeperator("🏭Materials Farm🏭")
+M:AddSeperator(" Materials ")
 
 if World2 then
-M:AddToggle(☢️"Auto Farm Material Radioativo☢️",false,function(value)
+M:AddToggle("Auto Farm Radioactive Material",false,function(value)
 Radioactive = value
 StopTween(Radioactive)
 end)
@@ -6318,7 +6322,7 @@ local MaterialsPos1 = CFrame.new(-507.7895202636719, 72.99479675292969, -126.456
 end
   
 if World2 then  
-M:AddToggle("💧Auto Farm Gota Mistica💧",false,function(value)
+M:AddToggle("Auto Farm Mystic Droplet",false,function(value)
 _G.Makori_gay = value
 StopTween(_G.Makori_gay)
 end)
@@ -6375,7 +6379,7 @@ spawn(function()
 end
     
 if World1 or World2 then
-M:AddToggle("🌋Auto Farm Magma🌋",_G.Makori_gay,function(value)
+M:AddToggle("Auto Farm Magma Ore",_G.Makori_gay,function(value)
 _G.Umm = value
 StopTween(_G.Umm)
 end)
@@ -6482,7 +6486,7 @@ spawn(function()
 end
     
 if World1 then  
-M:AddToggle("🪽Auto Farm Angel Wings🪽",_G.Makori_gay,function(value)
+M:AddToggle("Auto Farm Angel Wings",_G.Makori_gay,function(value)
 _G.Auto_Wing = value
 StopTween(_G.Auto_Wing)
 end)
@@ -6539,7 +6543,7 @@ spawn(function()
 end
 
 if World1 or World2 or World3 then   
-M:AddToggle("⚙️Auto Farm Couro⚙️",_G.Makori_gay,function(value)
+M:AddToggle("Auto Farm Leather",_G.Makori_gay,function(value)
 _G.Leather = value
 StopTween(_G.Leather)
 end)
@@ -6696,7 +6700,7 @@ spawn(function()
  end
   
 if World1 or world2 or World3 then    
-M:AddToggle("♻️Auto Farm Scrap Metal♻️",false,function(value)
+M:AddToggle("Auto Farm Scrap Metal",false,function(value)
 Scrap = value
 StopTween(Scrap)
 end)
@@ -6853,7 +6857,7 @@ spawn(function()
 end
     
 if World3 then  
-M:AddToggle("🍫Auto Farm Cacau🍫",false,function(value)
+M:AddToggle("Auto Farm Conjured Cocoa",false,function(value)
 Cocoafarm = value
 StopTween(Cocoafarm)
 end)
@@ -6910,7 +6914,7 @@ spawn(function()
 end
  
 if World3 then     
-M:AddToggle("🐉Auto Farm Escama do Dragão🐉",false,function(value)
+M:AddToggle("Auto Farm Dragon Scale",false,function(value)
 Dragon_Scale = value
 StopTween(Dragon_Scale)
 end)
@@ -6967,7 +6971,7 @@ spawn(function()
 end
   
 if World3 then    
-M:AddToggle("🧂Auto Farm Pólvora🧂",false,function(value)
+M:AddToggle("Auto Farm Gunpowder",false,function(value)
 Gunpowder = value
 StopTween(Gunpowder)
 end)
@@ -7024,7 +7028,7 @@ spawn(function()
 end
  
 if World3 then     
-M:AddToggle("🐟Auto Farm Escama de Peixe🐟",false,function(value)
+M:AddToggle("Auto Farm Fish Tail World 3",false,function(value)
 Fish = value
 StopTween(Fish)
 end)
@@ -7081,7 +7085,7 @@ spawn(function()
 end
     
 if World3 then  
-M:AddToggle("🐟Auto Farm Mini Tusk🐟",false,function(value)
+M:AddToggle("Auto Farm Mini Tusk",false,function(value)
 MiniHee = value
 StopTween(MiniHee)
 end)
@@ -15912,18 +15916,16 @@ spawn(function()
     end)
     end)
 
-print("Skinny Hub Load Complete")
-
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "http://www.roblox.com/asset/?id=15000713481";
-      Title = "W-Skinny", 
+      Icon = "http://www.roblox.com/asset/?id=1500071348";
+      Title = "Skinny Hub", 
       Text = "Welcome To Script!!";
 })
 wait(3)
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "http://www.roblox.com/asset/?id=15000713481";
-      Title = "W-Skinnny", 
-      Text = "By:Skinny";
+      Icon = "http://www.roblox.com/asset/?id=1500071348";
+      Title = "W-Skinny", 
+      Text = "Complet Load";
 })
 
    
