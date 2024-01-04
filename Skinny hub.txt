@@ -3233,7 +3233,7 @@ print("Load Script")
 
 local Library = Update:Window("          W-Skinny","7040347041",Enum.KeyCode.RightControl);
 
-local H = Library:AddTab("Informations","6026568198")
+local H = Library:AddTab("Informações","6026568198")
 local Main = Library:AddTab("Level Farm","13075651575")
 local M = Library:AddTab("Item Quest","13075622619")
 local Ss = Library:AddTab("Status","7040410130")
@@ -3248,13 +3248,13 @@ local Misc = Library:AddTab("Others","11156061121")
 local Time = H:AddLabel("Executor Time");spawn(function() getgenv().Time = true;while true do wait(.1) UpdateTime() end end);function UpdateTime() local date = os.date("*t");local hour = (date.hour) % 24;local ampm = hour < 12 and "AM" or "PM";local timezone = string.format("%02i:%02i:%02i %s", ((hour -1) % 12) + 1, date.min, date.sec, ampm);local datetime = string.format("%02d/%02d/%04d", date.day, date.month, date.year);local LocalizationService = game:GetService("LocalizationService");local Players = game:GetService("Players");local player = Players.LocalPlayer;local name = player.Name;local result, code = pcall(function()   return LocalizationService:GetCountryRegionForPlayerAsync(player)  end);Time:Set(" : " .. timezone);Time:Set("Executor Time: " .. datetime .. " [ " .. code .. " ]");spawn(function() if getgenv().Time then pcall(function()  while wait() do  Time()  end end) end end) end
 
 H:AddLabel("📱Script Mobile/PC💻")
-H:AddLabel("🧑‍💻Wellcome🧑‍💻")
+H:AddLabel("🧑‍💻Seja Bem Vindo!🧑‍💻")
 
 H:AddSeperator("CreditS")
 
 
 
-H:AddButton("🧑‍💻Script Made By Skinny e Lose🧑‍💻",function()
+H:AddButton("🧑‍💻Script Made By Skinny e Losee🧑‍💻",function()
 setclipboard(".")
 end)
 
@@ -3266,14 +3266,14 @@ H:AddSeperator("➡️Updates")
 
 
 
-H:AddLabel("[+] New Functions| 1/1/2023")
+H:AddLabel("[+] New Functions | 1/1/2023")
 
 
 
 
 H:AddSeperator("Status")
     
-    local locallv = H:AddLabel("Level")
+    local locallv = H:AddLabel("🆙Level")
     
     spawn(function()
         while wait() do
@@ -3283,7 +3283,7 @@ H:AddSeperator("Status")
         end
     end)
     
-    local localrace = H:AddLabel("Race")
+    local localrace = H:AddLabel("🪽Raça")
     
     spawn(function()
         while wait() do
@@ -3293,7 +3293,7 @@ H:AddSeperator("Status")
         end
     end)
     
-    local localbeli = H:AddLabel("Beli")
+    local localbeli = H:AddLabel("💸Dinheiro")
     
     spawn(function()
         while wait() do
@@ -3303,7 +3303,7 @@ H:AddSeperator("Status")
         end
     end)
     
-    local localfrag = H:AddLabel("Fragment")
+    local localfrag = H:AddLabel("❄️Fragmentos")
     
     spawn(function()
         while wait() do
@@ -3314,7 +3314,7 @@ H:AddSeperator("Status")
     end)
     
     
-    local localexp = H:AddLabel("ExP")
+    local localexp = H:AddLabel("🆙XP")
     
     spawn(function()
         while wait() do
@@ -3324,7 +3324,7 @@ H:AddSeperator("Status")
         end
     end)
     
-    local localstat = H:AddLabel("Stats Points")
+    local localstat = H:AddLabel("❄️Status Pontos")
     
     spawn(function()
         while wait() do
@@ -3334,7 +3334,7 @@ H:AddSeperator("Status")
         end
     end)
     
-    local localbountyhornor = H:AddLabel("Bounty")
+    local localbountyhornor = H:AddLabel("💢Bounty")
     
     spawn(function()
         while wait() do
@@ -3344,7 +3344,7 @@ H:AddSeperator("Status")
         end
     end)
     
-    local localDevil = H:AddLabel("Devil Fruit")
+    local localDevil = H:AddLabel("🍎Fruta")
     
     spawn(function()
         while wait() do
@@ -3358,7 +3358,7 @@ H:AddSeperator("Status")
         end
     end)
 
-H:AddSeperator(" Sword ")
+H:AddSeperator("🗡️Espadas🗡️")
 
 local Saber = H:AddLabel("❌: Saber")
 local Rengoku = H:AddLabel("❌: Rengoku")
