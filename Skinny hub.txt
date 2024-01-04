@@ -8646,7 +8646,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
     end
     end)
     
-    M:AddSeperator("🪝Ganchos Gemêos🪝")
+    M:AddSeperator("✅Ganchos Gemêos✅")
     
     M:AddToggle("Auto Twin Hook", _G.AutoTwinHook,function(value)
          _G.AutoTwinHook = value
@@ -8705,9 +8705,9 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
         end
     end)
     
-    M:AddSeperator("Rough Sea")
+    M:AddSeperator("🌊Eventos Maritimos🌊")
     
-    M:AddToggle("Auto Drive Boat", _G.DomadicAutoDriveBoat,function(value)
+    M:AddToggle("🚢Auto Drive Boat🚢", _G.DomadicAutoDriveBoat,function(value)
          _G.DomadicAutoDriveBoat = value
         StopTween( _G.DomadicAutoDriveBoat)
     end)
@@ -8766,12 +8766,12 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
 	end)
 	
 
-    M:AddToggle("Auto Farm Terrorshark", _G.AutoTerrorshark,function(value)
+    M:AddToggle("🦈Auto Farm Terrorshark🦈", _G.AutoTerrorshark,function(value)
          _G.AutoTerrorshark = value
         StopTween( _G.AutoTerrorshark)
     end)
     
-    M:AddToggle("Auto Farm Shark",FarmTFully,function(value)
+    M:AddToggle("🦈Auto Farm Shark🦈",FarmTFully,function(value)
     FarmShark = value
     StopTween(FarmShark)
     end)
@@ -8814,17 +8814,17 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
         end
     end)
     
-    M:AddToggle("Auto Farm Piranha",_G.farmpiranya,function(value)
+    M:AddToggle("🐟Auto Farm Piranha🐟",_G.farmpiranya,function(value)
     _G.farmpiranya = value
     StopTween(_G.farmpiranya)
     end)
     
-    M:AddToggle("Auto Fish Crew Member",_G.Fish_Crew_Member,function(value)
+    M:AddToggle("🧜Auto Fish Crew Member🧜",_G.Fish_Crew_Member,function(value)
     _G.Fish_Crew_Member = value
     StopTween(_G.Fish_Crew_Member)
     end)
     
-    M:AddToggle("Auto Terrorshark Hop", _G.AutoTerrorsharkhop,function(value)
+    M:AddToggle("🦈Auto Terrorshark Hop🦈", _G.AutoTerrorsharkhop,function(value)
          _G.AutoTerrorsharkhop = value
     end)
    
@@ -8942,7 +8942,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
         end
     end)
     
-    M:AddToggle("Auto Raid Ship",_G.KillGhostShip,function(value)
+    M:AddToggle("🚢Auto Raid Ship🚢",_G.KillGhostShip,function(value)
     _G.KillGhostShip = value
     StopTween(_G.KillGhostShip)
     end)
@@ -8980,7 +8980,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
     end
 end)
     
-    M:AddToggle("Auto Ghost Ship",_G.bjirFishBoat,function(value)
+    M:AddToggle("🚢Auto Ghost Ship🚢",_G.bjirFishBoat,function(value)
     _G.bjirFishBoat = value
     StopTween(_G.bjirFishBoat)
     end)
@@ -9103,9 +9103,9 @@ end)
     pcall(function()
         while wait() do
             if game.Workspace._WorldOrigin.Locations:FindFirstChild('Frozen Dimension') then
-                FrozenIsland:Set('🟢: Frozen Dimension Spawning')
+                FrozenIsland:Set('✅:Leviathan Island Está Spawn')
             else
-                FrozenIsland:Set('🔴: Frozen Dimension Not Found')
+                FrozenIsland:Set('❌:Leviathan Island Not Spawn')
             end
         end
     end)
@@ -9115,15 +9115,15 @@ spawn(function()
     pcall(function()
         while wait() do
             if game.Workspace._WorldOrigin.Locations:FindFirstChild('Kitsunen Island') then
-                FaiFaoKai:Set('🦊: Kitsunen Spwan')
+                FaiFaoKai:Set('🦊: Kitsune Island está Spawn!')
             else
-                FaiFaoKai:Set('🔴: Kitsunen Not Found')
+                FaiFaoKai:Set('🔴: Kitsune Island Not Found!')
             end
         end
     end)
 end)
 
-M:AddButton("Set Speed Boat",function()
+M:AddButton("🚢Set Speed Boat🚢",function()
         loadstring(Game:HttpGetAsync("https://raw.githubusercontent.com/Domadicoof/Domadicoof/bbf98b2996c542627a6f3d08f5b458306d0d1567/SetSpeedBoatscript"))()
     end)
     
@@ -9134,11 +9134,11 @@ FrozenIsland = M:AddLabel("")
     StopTween(_G.AutoFrozenDimension)
     end)
     
-    M:AddLabel("Esp Kitsunen Island in MiscTab At Seperator Esp Menu")
+    M:AddLabel("🦊Esp Kitsune Island in OthersTab🦊")
     
     FaiFaoKai = M:AddLabel("")
     
-    M:AddToggle("Auto Kitsunen Island",_G.AutoFKitsune,function(value)
+    M:AddToggle("🦊Auto Kitsune Island🦊",_G.AutoFKitsune,function(value)
     _G.AutoFKitsune = value
     StopTween(_G.AutoFKitsune)
     end)
@@ -9166,14 +9166,14 @@ FrozenIsland = M:AddLabel("")
             end
         end)
         
-    M:AddToggle("Send Notification If Kitsunen Island Spwan",_G.KisuneWarn,function(value)
+    M:AddToggle("✅Enviar Notificação Quando Estiver Spawn✅",_G.KisuneWarn,function(value)
     _G.KisuneWarn = value
     end)
     
 --Notfication-Sound  
 local notification = Instance.new("Sound")
 notification.Parent = game:GetService("SoundService")
-notification.SoundId = "rbxassetid://9086208751" --sound id
+notification.SoundId = "rbxassetid://15000713481" --sound id
 notification.Volume = 5 --ระวังหูแตก
 
     spawn(function()
@@ -9183,9 +9183,9 @@ notification.Volume = 5 --ระวังหูแตก
                     if game.Workspace._WorldOrigin.Locations:FindFirstChild('Kitsune Island') then
                         wait(5)
                     game.StarterGui:SetCore("SendNotification", {
-                        Icon = "http://www.roblox.com/asset/?id=12523036534";
-                        Title = "Domadic Notification", 
-                        Text = "Kitsunen Is Spawn";
+                        Icon = "http://www.roblox.com/asset/?id=✅";
+                        Title = "Skinny Hub", 
+                        Text = "Kitsune Island Spawn";
                     notification:Play()
                     })
                     end
