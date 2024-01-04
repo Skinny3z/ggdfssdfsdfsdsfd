@@ -3418,7 +3418,7 @@ spawn(function()
     end
 end)
 
-H:AddSeperator("Quest")
+H:AddSeperator("🛡️Quest🛡️")
 
 local Bartilo_Quest = H:AddLabel("❌: Bartilo Quest")
 local Don_Swan_Quest = H:AddLabel("❌: Don Swan Quest")
@@ -3442,7 +3442,7 @@ spawn(function()
     end
 end)
 
-H:AddSeperator("Sword Legendary")
+H:AddSeperator("⚔️Espadas Lendarias⚔️")
 
 local Shisui = H:AddLabel("❌: Shisui")
 local Saddi = H:AddLabel("❌: Saddi")
@@ -3470,7 +3470,7 @@ spawn(function()
     end
 end)
 
-H:AddSeperator("Melee")
+H:AddSeperator("👊Estilos de Luta👊")
 
 local Superhuman = H:AddLabel("❌: Superhuman")
 local Death_Step = H:AddLabel("❌: Death Step")
@@ -3499,7 +3499,7 @@ spawn(function()
     end
 end)
 
-H:AddSeperator("Gun")
+H:AddSeperator("⚔️Arma⚔️")
 
 local Kabu_cha = H:AddLabel("❌: Kabucha")
 local Acidum_Rifle = H:AddLabel("❌: Acidum Rifle")
@@ -3525,7 +3525,7 @@ end)
 
 
 
-H:AddSeperator("Accessory")
+H:AddSeperator("⚙️Acessorios⚙️")
 
 local Dark_Coat = H:AddLabel("❌: Dark Coat")
 local Ghoul_Mask = H:AddLabel("❌: Ghoul Mask")
@@ -5201,10 +5201,10 @@ end)
         end
     end)
     
-    Main:AddSeperator("Setting")
+    Main:AddSeperator("⚙️Configurações⚙️")
     
     
-Main:AddToggle("By Pass Tp",BypassTP,function(Fast)
+Main:AddToggle("Bypass Teleport",BypassTP,function(Fast)
 BypassTP = Fast
 end)
 
@@ -5287,7 +5287,7 @@ end)
         _G.FastAttack = value
     end)      
     
-    Main:AddToggle("Fast Attack Super Fast [Trun on Fast Attack to use!!] ",_G.NotDeley,function(value)
+    Main:AddToggle("Fast Attack Super Fast[Use Função Acima]",_G.NotDeley,function(value)
         _G.NotDeley = value
     end)      
     
