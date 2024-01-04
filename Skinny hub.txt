@@ -6263,7 +6263,7 @@ end)
 M:AddSeperator("⛏️Auto Farm Material⛏️")
 
 if World2 then
-M:AddToggle("Auto Farm Radioactive Material",false,function(value)
+M:AddToggle("☢️Auto Farm Material Radioativo☢️",false,function(value)
 Radioactive = value
 StopTween(Radioactive)
 end)
@@ -6320,7 +6320,7 @@ local MaterialsPos1 = CFrame.new(-507.7895202636719, 72.99479675292969, -126.456
 end
   
 if World2 then  
-M:AddToggle("Auto Farm Mystic Droplet",false,function(value)
+M:AddToggle("💧Auto Farm Gota Mistica💧",false,function(value)
 _G.Makori_gay = value
 StopTween(_G.Makori_gay)
 end)
@@ -6377,7 +6377,7 @@ spawn(function()
 end
     
 if World1 or World2 then
-M:AddToggle("Auto Farm Magma Ore",_G.Makori_gay,function(value)
+M:AddToggle("🌋Auto Farm Minerio Magma🌋",_G.Makori_gay,function(value)
 _G.Umm = value
 StopTween(_G.Umm)
 end)
@@ -6484,7 +6484,7 @@ spawn(function()
 end
     
 if World1 then  
-M:AddToggle("Auto Farm Angel Wings",_G.Makori_gay,function(value)
+M:AddToggle("🪽Auto Farm Asa de Anjo🪽",_G.Makori_gay,function(value)
 _G.Auto_Wing = value
 StopTween(_G.Auto_Wing)
 end)
@@ -6541,7 +6541,7 @@ spawn(function()
 end
 
 if World1 or World2 or World3 then   
-M:AddToggle("Auto Farm Leather",_G.Makori_gay,function(value)
+M:AddToggle("⚙️Auto Farm Couro⚙️",_G.Makori_gay,function(value)
 _G.Leather = value
 StopTween(_G.Leather)
 end)
@@ -6698,7 +6698,7 @@ spawn(function()
  end
   
 if World1 or world2 or World3 then    
-M:AddToggle("Auto Farm Scrap Metal",false,function(value)
+M:AddToggle("🔧Auto Farm Metal Ferro🔧",false,function(value)
 Scrap = value
 StopTween(Scrap)
 end)
@@ -6855,7 +6855,7 @@ spawn(function()
 end
     
 if World3 then  
-M:AddToggle("Auto Farm Conjured Cocoa",false,function(value)
+M:AddToggle("🍫Auto Farm Cacau🍫",false,function(value)
 Cocoafarm = value
 StopTween(Cocoafarm)
 end)
@@ -6912,7 +6912,7 @@ spawn(function()
 end
  
 if World3 then     
-M:AddToggle("Auto Farm Dragon Scale",false,function(value)
+M:AddToggle("🐉Auto Farm Escama do Dragao🐉",false,function(value)
 Dragon_Scale = value
 StopTween(Dragon_Scale)
 end)
@@ -6969,7 +6969,7 @@ spawn(function()
 end
   
 if World3 then    
-M:AddToggle("Auto Farm Gunpowder",false,function(value)
+M:AddToggle("🐀Auto Farm Polvora🐀",false,function(value)
 Gunpowder = value
 StopTween(Gunpowder)
 end)
