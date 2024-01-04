@@ -7026,7 +7026,7 @@ spawn(function()
 end
  
 if World3 then     
-M:AddToggle("Auto Farm Fish Tail World 3",false,function(value)
+M:AddToggle("🐟Auto Farm Rabo de Peixe🐟",false,function(value)
 Fish = value
 StopTween(Fish)
 end)
@@ -7083,7 +7083,7 @@ spawn(function()
 end
     
 if World3 then  
-M:AddToggle("Auto Farm Mini Tusk",false,function(value)
+M:AddToggle("⚙️Auto Farm Mini Presa⚙️",false,function(value)
 MiniHee = value
 StopTween(MiniHee)
 end)
@@ -7139,13 +7139,13 @@ spawn(function()
     end)
 end
     
-    M:AddToggle("Hop Farm",_G.Makori_gay,function(value)
+    M:AddToggle("🔧Entrar em Server Vazio🔧",_G.Makori_gay,function(value)
     _G.StardHop = value
     end)
 
-    M:AddSeperator("Advance Dungeon")
+    M:AddSeperator("🪽Raid Avançada🪽")
     
-    M:AddToggle("Auto Phoenix Raid",_G.AutoAdvanceDungeon,function(value)
+    M:AddToggle("🦅Auto Phoenix Raid🦅",_G.AutoAdvanceDungeon,function(value)
         _G.AutoAdvanceDungeon = value
         StopTween(_G.AutoAdvanceDungeon)
     end)
@@ -7180,9 +7180,9 @@ end
         end
     end)
 
-   M:AddSeperator("Misc Mastery")
+   M:AddSeperator("⚙️Farm Maestria⚙️")
     
-    M:AddToggle("Auto Farm BF Mastery",_G.AutoFarmFruitMastery,function(value)
+    M:AddToggle("🍎Auto Farm Fruit Maestria🍎",_G.AutoFarmFruitMastery,function(value)
         _G.AutoFarmFruitMastery = value
         StopTween(_G.AutoFarmFruitMastery)
         if _G.AutoFarmFruitMastery == false then
