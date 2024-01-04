@@ -9117,7 +9117,7 @@ spawn(function()
             if game.Workspace._WorldOrigin.Locations:FindFirstChild('Kitsunen Island') then
                 FaiFaoKai:Set('🦊: Kitsune Island está Spawn!')
             else
-                FaiFaoKai:Set('🔴: Kitsune Island Not Found!')
+                FaiFaoKai:Set('❌: Kitsune Island Not Found!')
             end
         end
     end)
@@ -9194,14 +9194,14 @@ notification.Volume = 10
         end
     end)
         
-    M:AddSeperator("🥷🏻Auto Elite Hunter🥷🏻")
+    M:AddSeperator("⚔️Auto Elite Hunter⚔️")
     
     local EliteProgress = M:AddLabel("")
     
     spawn(function()
         pcall(function()
             while wait() do
-                EliteProgress:Set("Elite Progress : "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))
+                EliteProgress:Set("Elite Hunter Mortos : "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))
             end
         end)
     end)
@@ -9221,7 +9221,7 @@ notification.Volume = 10
 		end
 	end)
 	
-    M:AddToggle("🥷🏻Auto Elite Hunter🥷🏻",_G.AutoElitehunter,function(value)
+    M:AddToggle("⚔️Auto Elite Hunter⚔️",_G.AutoElitehunter,function(value)
         _G.AutoElitehunter = value
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
         StopTween(_G.AutoElitehunter)
@@ -9289,7 +9289,7 @@ notification.Volume = 10
         end
     end)
     
-    M:AddToggle("🥷🏻Auto Elite Hunter Hop🥷🏻",_G.AutoEliteHunterHop,function(value)
+    M:AddToggle("⚔️Auto Elite Hunter Hop⚔️",_G.AutoEliteHunterHop,function(value)
         _G.AutoEliteHunterHop = value
     end)
     
@@ -9362,14 +9362,14 @@ notification.Volume = 10
         _G.AutoArenaTrainerHop = value
     end)
     
-    M:AddSeperator("Seperator Hallow Scythe")
+    M:AddSeperator("🛡️Foice Sagrada🛡️")
     
-    M:AddToggle("Auto Hallow Scythe",_G.AutoFarmBossHallow,function(value)
+    M:AddToggle("🛡️Auto Foice Sagrada🛡️",_G.AutoFarmBossHallow,function(value)
         _G.AutoFarmBossHallow = value
         StopTween(_G.AutoFarmBossHallow)
     end)
     
-    M:AddToggle("Auto Hallow Scythe Hop",_G.AutoFarmBossHallowHop,function(value)
+    M:AddToggle("🛡️Auto Foice Sagrada Hop🛡️",_G.AutoFarmBossHallowHop,function(value)
         _G.AutoFarmBossHallowHop = value
     end)
     
@@ -9409,9 +9409,9 @@ notification.Volume = 10
         end
     end)
     
-    M:AddSeperator("Dark Dagger")
+    M:AddSeperator("✝️Mini Yoru✝️")
     
-    M:AddToggle("Auto Kill Admin Boss",_G.AutoDarkDagger,function(value)
+    M:AddToggle("🗡️Auto Kill Rip Indra🗡️",_G.AutoDarkDagger,function(value)
         _G.AutoDarkDagger = value
         StopTween(_G.AutoDarkDagger)
     end)
@@ -9455,7 +9455,7 @@ notification.Volume = 10
         end)
     end)
     
-    M:AddToggle("Auto Kill Admin Boss Hop",_G.AutoDarkDagger_Hop,function(value)
+    M:AddToggle("🗡️Auto Kill Rip Indra Hop🗡️",_G.AutoDarkDagger_Hop,function(value)
         _G.AutoDarkDagger_Hop = value
     end)
     
@@ -9469,7 +9469,7 @@ notification.Volume = 10
         end)
     end)
     
-M:AddToggle("Auto Press Haki Button",_G.Farm_Ob_Color,function(vu)
+M:AddToggle("🗡️Ativar Hakis Lendarios🗡️",_G.Farm_Ob_Color,function(vu)
 	Open_Color_Haki = vu
 	StopTween(Open_Color_Haki)
 end)
