@@ -5611,10 +5611,10 @@ end)
         _G.SkillV = value
     end)
     
-    M:AddSeperator("World")
+    M:AddSeperator("🌎World🌎")
 
     if World1 then
-        M:AddToggle("Auto Second Sea",_G.AutoSecondSea,function(value)
+        M:AddToggle("Auto Sea 2",_G.AutoSecondSea,function(value)
             _G.AutoSecondSea = value
             StopTween(_G.AutoSecondSea)
         end)
@@ -5677,7 +5677,7 @@ end)
 
     if World2 then
 
-        M:AddToggle("Auto Third Sea",_G.AutoThirdSea,function(value)
+        M:AddToggle("Auto Sea 3",_G.AutoThirdSea,function(value)
             _G.AutoThirdSea = value
             StopTween(_G.AutoThirdSea)
         end)
@@ -5727,7 +5727,7 @@ end)
     
     if World2 then
 
-        M:AddToggle("Auto Farm Factory",_G.AutoFactory,function(value)
+        M:AddToggle("🏭Auto Farm Fabrica🏭",_G.AutoFactory,function(value)
             _G.AutoFactory = value
             StopTween(_G.AutoFactory)
         end)
@@ -5760,7 +5760,7 @@ end)
         pcall(function()
             while wait() do
     if game.Workspace._WorldOrigin.Locations:FindFirstChild('Mirage Island') then
-    Mirragecheck:Set('🏝️: Mirage Island Está Spawn')
+    Mirragecheck:Set('🏝️: Mirage Island Está Spawn✅')
     else
       Mirragecheck:Set('🏝️: Mirage Island Not Found❌' )end
             end
@@ -5879,7 +5879,7 @@ spawn(function()
         end
     end)
 end)
-M:AddButton("Função Acima Ativada Clique aqui", function()
+M:AddButton(" Quando Função Acima for Ativada Clique aqui!!", function()
                 TweenNpc()
                 end)
 
@@ -6078,7 +6078,7 @@ end
         end)
     end)
     
-    M:AddToggle("Auto Electric Claw",_G.AutoElectricClaw,function(value)
+    M:AddToggle("⚡Auto Electric Claw⚡",_G.AutoElectricClaw,function(value)
         _G.AutoElectricClaw = value
         StopTween(_G.AutoElectricClaw)
     end)
@@ -6149,7 +6149,7 @@ end
         end)
     end)
     
-    M:AddToggle("Auto Dragon Talon",_G.AutoDragonTalon,function(value)
+    M:AddToggle("🐉Auto Dragon Talon🐉",_G.AutoDragonTalon,function(value)
         _G.AutoDragonTalon = value
     end)
     
@@ -6175,7 +6175,7 @@ end
         end
     end)
     
-    M:AddToggle("Auto GodHuman",_G.Auto_God_Human,function(value)
+    M:AddToggle("💢Auto God Human💢",_G.Auto_God_Human,function(value)
  _G.Auto_God_Human = value
 end)
 spawn(function()
@@ -6260,7 +6260,7 @@ spawn(function()
 	end
 end)
 
-M:AddSeperator(" Materials ")
+M:AddSeperator("⛏️Auto Farm Material⛏️")
 
 if World2 then
 M:AddToggle("Auto Farm Radioactive Material",false,function(value)
