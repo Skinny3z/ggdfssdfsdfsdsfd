@@ -9514,9 +9514,9 @@ function EquipAllWeapon()
 	end)
 end
 
-    M:AddSeperator(" Sea Beast ")
+    M:AddSeperator("🌊Sea Beast🌊")
  
-    M:AddToggle('Teleport to Seabaeat', false, function(value)
+    M:AddToggle('🐲Teleportar No Sea Best🐲', false, function(value)
     _G.AutoSeaBest = value
     StopTween(_G.AutoSeaBest)
     end)
@@ -9543,7 +9543,7 @@ end
             end
         end)
         
-M:AddToggle("Auto Sea Baest [Fully]",_G.Auto_Seabest,function(value)
+M:AddToggle("🐲Auto Kill Sea Best🐲",_G.Auto_Seabest,function(value)
 _G.Auto_Seabest = value
 StopTween(_G.Auto_Seabest)
 end)
@@ -9688,7 +9688,7 @@ task.spawn(function()
     end
 end)
 
-M:AddToggle("Destroy Boat if found SeaBeast or Player Health 0",_G.AutoDesBoat,function(value)
+M:AddToggle("🐲Destruir Barco Quando Encontrar Sea Best🐲",_G.AutoDesBoat,function(value)
 _G.AutoDesBoat = value
 end)
 
@@ -9707,19 +9707,19 @@ end)
 
 
 
-M:AddToggle('Ennable Hop Sea Event Farm', false, function(value)
+M:AddToggle('⚙️Entrar Em Servidor Com Sea Best⚙️', false, function(value)
     _G.AutoSeaBestHop = value
     end)
     
     
-    M:AddSeperator(" Trident ")
+    M:AddSeperator("🔱Tridente do Dragão🔱")
 	
-	M:AddToggle("Auto Dragon Trident", _G.Auto_Dragon_Trident,function(value)
+	M:AddToggle("🐲Auto Dragão Tridente🐲", _G.Auto_Dragon_Trident,function(value)
          _G.Auto_Dragon_Trident = value
         StopTween(_G.Auto_Dragon_Trident)
     end)
     
-    M:AddToggle("Auto Dragon Trident Hop", _G.Auto_Dragon_Trident_Hop,function(value)
+    M:AddToggle("🐲Auto Dragão Trident Para Encontrar Boss🐲", _G.Auto_Dragon_Trident_Hop,function(value)
          _G.Auto_Dragon_Trident_Hop = value
     end)
     
@@ -9771,14 +9771,14 @@ M:AddToggle('Ennable Hop Sea Event Farm', false, function(value)
         end
     end)
 
-	M:AddSeperator(" Waden Sword ")
+	M:AddSeperator("🗡️Waden Sword🗡️")
 	
-	M:AddToggle("Auto Waden Sword", _G.Autowaden,function(value)
+	M:AddToggle("Auto Waden Sword🗡", _G.Autowaden,function(value)
          _G.Autowaden = value
         StopTween( _G.Autowaden)
     end)
     
-    M:AddToggle("Auto Waden Sword Hop", _G.Autowadenhop,function(value)
+    M:AddToggle("Auto Waden Sword Para Encontrar Boss", _G.Autowadenhop,function(value)
          _G.Autowadenhop = value
     end)
     
