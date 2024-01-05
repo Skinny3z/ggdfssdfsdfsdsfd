@@ -9948,7 +9948,6 @@ local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.89868164062
         end
     end)
 
-    if World2 then
     M:AddSeperator("Misc Swan Glasses")
     
     M:AddToggle("Auto Swan Glasses",_G.AutoFarmSwanGlasses,function(value)
