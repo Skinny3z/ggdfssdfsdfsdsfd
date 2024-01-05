@@ -5802,7 +5802,7 @@ M:AddToggle("Teleportar Para a Mirage Island",_G.AutoMysticIsland,function(value
 		end)
     end
     end)
-    M:AddToggle("Auto Spawn Mirage Island",_G.dao,function(state)
+    M:AddToggle("Auto Summon Mirage Island",_G.dao,function(state)
     if state then
         _G.dao = true
     else
@@ -9773,7 +9773,7 @@ M:AddToggle('⚙️Entrar Em Servidor Com Sea Best⚙️', false, function(value
 
 	M:AddSeperator("🗡️Waden Sword🗡️")
 	
-	M:AddToggle("Auto Waden Sword🗡", _G.Autowaden,function(value)
+	M:AddToggle("Auto Waden Sword", _G.Autowaden,function(value)
          _G.Autowaden = value
         StopTween( _G.Autowaden)
     end)
@@ -9947,7 +9947,7 @@ local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.89868164062
             end
         end
     end)
-
+    
     M:AddSeperator("Misc Swan Glasses")
     
     M:AddToggle("Auto Swan Glasses",_G.AutoFarmSwanGlasses,function(value)
